@@ -20,7 +20,7 @@ export default function TabLayout() {
         options={{
           title: '計劃假期',
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'airplane-sharp' : 'airplane-outline'} color={color}/>
+            <Ionicons name={focused ? 'airplane-sharp' : 'airplane-outline'} color={"#2C4036"}/>
           ),
         }}
       />
@@ -29,7 +29,7 @@ export default function TabLayout() {
         options={{
           title: '我的行程',
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'calendar-sharp' : 'calendar-outline'} color={color}/>
+            <Ionicons name={focused ? 'calendar-sharp' : 'calendar-outline'} color={"#2C4036"}/>
           ),
         }}
       />
@@ -38,7 +38,7 @@ export default function TabLayout() {
         options={{
           title: 'Home',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={"#2C4036"} />
           ),
         }}
       />
@@ -47,7 +47,7 @@ export default function TabLayout() {
         options={{
           title: '推廣',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'gift' : 'gift-outline'} color={color} />
+            <TabBarIcon name={focused ? 'gift' : 'gift-outline'} color={"#2C4036"} />
           ),
         }}
       />
@@ -56,7 +56,7 @@ export default function TabLayout() {
         options={{
           title: '個人中心',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'person' : 'person-outline'} color={color} />
+            <TabBarIcon name={focused ? 'person' : 'person-outline'} color={"#2C4036"} />
           ),
         }}
       />
