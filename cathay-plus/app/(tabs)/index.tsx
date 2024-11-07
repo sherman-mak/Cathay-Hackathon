@@ -8,7 +8,6 @@ import { ThemedView } from '@/components/ThemedView';
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
-<<<<<<< HEAD
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
         <Image
@@ -86,7 +85,6 @@ export default function HomeScreen() {
             .catch(error => console.log('error', error));
         }}
       />
-=======
        headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       // headerImage={
       //   <Image
@@ -97,7 +95,6 @@ export default function HomeScreen() {
       >
        <Image source={require('@/assets/appImages/HomePage.png')} style={{width:'100vw', position:'static' }} />
        <div style={{height:'350px'}}></div>
->>>>>>> 56b4a10bce16f52d4e4652eb17f233649fe13248
     </ParallaxScrollView>
   );
 }
