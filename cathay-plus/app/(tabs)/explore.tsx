@@ -4,8 +4,7 @@ import { StyleSheet, Image, Platform } from 'react-native';
 import { Collapsible } from '@/components/Collapsible';
 import { ExternalLink } from '@/components/ExternalLink';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+
 
 export default function TabTwoScreen() {
   return (
@@ -13,78 +12,49 @@ export default function TabTwoScreen() {
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
       // headerImage={<Ionicons size={310} name="code-slash" style={styles.headerImage} />}
       >
-      {/* <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Explore</ThemedText>
-      </ThemedView>
-      <ThemedText>This app includes example code to help you get started.</ThemedText>
-      <Collapsible title="File-based routing">
-        <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
-        </ThemedText>
-        <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/router/introduction">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Android, iOS, and web support">
-        <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the web version, press{' '}
-          <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
-        </ThemedText>
-      </Collapsible>
-      <Collapsible title="Images">
-        <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
-        </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
-        <ExternalLink href="https://reactnative.dev/docs/images">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Custom fonts">
-        <ThemedText>
-          Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
-          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
-          </ThemedText>
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Light and dark mode components">
-        <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user's current color scheme is, and so you can adjust UI colors accordingly.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Animations">
-        <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
-          the powerful <ThemedText type="defaultSemiBold">react-native-reanimated</ThemedText> library
-          to create a waving hand animation.
-        </ThemedText>
-        {Platform.select({
-          ios: (
-            <ThemedText>
-              The <ThemedText type="defaultSemiBold">components/ParallaxScrollView.tsx</ThemedText>{' '}
-              component provides a parallax effect for the header image.
-            </ThemedText>
-          ),
-        })}
-      </Collapsible> */}
+      <textarea style={{width: "50vw"}}>
+        請問需要預訂當地體驗嗎？
+      </textarea>
+      <textarea style={{width: "50vw", marginRight: "0", marginLeft: "auto"}}>
+        需要
+      </textarea>
+      <button style={{width: "20vw", marginLeft: "10"}} onClick={() => {
+
+        var myHeaders = new Headers();
+        myHeaders.append("Cookie", "_abck=C994F9C6A4A744FCB095F435E2C6F17C~-1~YAAQOQ5M2w5x17ySAQAAa4DcAQzy0UzqxTMbJfrTjefVQWb4Yj5xAi5beZBVZfyKiEW1boyJOURTpuhKAovLQSxSINlhDQODhLs8x89CMr6Vw74lRcYEIdCSdnqkaDu8xGoeBh/A2lr1iwgGICY/ttPEBOl+KG7V2stzaRLN3JI1zB8s3V5r5cLuZnBM6Fi7dh2A+/8GFTp0BsehvkmKyA+F6LybQ0e1UYbveAG6EztokQCSAXQv/XMiFk/FEYGDBeNPAdDyF/tdx1irUx8a5OhggxIIuFy17M0unpzOEwbLHJGHxxasqYOVAobMSuiGhF/jD7RtL+IKxZHZMS3l3YwbqR2aYCvTsbdV6F/OyeChbOwLDTy1zOKTywDdFMCVpqxNgsS8lBXKgB3zBD3BRZttbC1loRR3zALRfCLVCgom~-1~-1~-1; 8bac6ca36dd7fb6e1a5df804509d965c=0c86393222528be065d396c1cb85b093; 91d1e5aa2d49f01a98ca619ad658207a=c710d1890bccd9887bff2a4cfbfed571");
+        myHeaders.append("Content-Type", "application/json");
+        myHeaders.append("Api-Key", "0Ws2MAmAseTl39JZLohswZZgWLCxpZ1K");
+
+        var raw = JSON.stringify({
+          "contents": [
+            {
+              "role": "user",
+              "parts": [
+                {
+                  "text": "Where is Hong Kong?"
+                }
+              ]
+            }
+          ]
+        });
+
+        var requestOptions = {
+          method: 'POST',
+          headers: myHeaders,
+          body: raw,
+          redirect: 'follow'
+        };
+
+        fetch("https://developers.cathaypacific.com/hackathon-apigw/hackathon-middleware/v1/vertex-ai/google-gemini", {
+          method: 'POST',
+          headers: myHeaders,
+          body: raw,
+          redirect: 'follow'
+        })
+          .then(response => response.text())
+          .then(result => console.log(result))
+          .catch(error => console.log('error', error));
+        }}>選擇你的行程計劃</button>
     </ParallaxScrollView>
   );
 }
