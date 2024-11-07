@@ -8,6 +8,7 @@ import { ThemedView } from '@/components/ThemedView';
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
+<<<<<<< HEAD
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
         <Image
@@ -85,6 +86,18 @@ export default function HomeScreen() {
             .catch(error => console.log('error', error));
         }}
       />
+=======
+       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
+      // headerImage={
+      //   <Image
+      //     source={require('@/assets/images/partial-react-logo.png')}
+      //     style={styles.reactLogo}
+      //   />
+      // }
+      >
+       <Image source={require('@/assets/appImages/HomePage.png')} style={{width:'100vw', position:'static' }} />
+       <div style={{height:'350px'}}></div>
+>>>>>>> 56b4a10bce16f52d4e4652eb17f233649fe13248
     </ParallaxScrollView>
   );
 }
@@ -100,7 +113,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   reactLogo: {
-    height: 178,
+    height: 0,
     width: 290,
     bottom: 0,
     left: 0,
